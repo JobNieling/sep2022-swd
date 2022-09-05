@@ -39,6 +39,13 @@ let map = {
  */
 game.goToLocation = (locationName, done) => {
     //PART A)
+
+    // TODO: controleer of locationName niet al is opgehaald
+
+    request(`HTTP://localhost/${locationName}`, function(error, response, body) {
+        const data = JSON.parse(body)
+        done(null, data)
+    });
 };
 
 /**

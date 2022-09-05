@@ -1,11 +1,12 @@
+// to call the code use: node doAllTasks.js
 /* A */
 
-let doAllTasks = (/* Pas hier de code aan voor onderdeel A */) => {
+let doAllTasks = (done) => {
     setTimeout(() => {
         console.log('Taak 1 klaar');
         setTimeout(() => {
             console.log('Taak 2 klaar');
-            /* A) Plaats je aanpassing op deze regel */
+            done();
         }, Math.random() * 100);
     }, Math.random() * 100);    
 };
@@ -17,17 +18,18 @@ let printWhenFinished = () => {
     console.log('nu gaan we andere dingen doen');
 };
 
-doAllTasks(/* B) Pas hier de code aan */);
+doAllTasks(printWhenFinished);
 
 /* C */
 
-let doAllTasks2 = (/* Pas hier de code aan voor onderdeel C */) => {
+let doAllTasks2 = (func) => {
     let completedTasks = [];
     setTimeout(() => {
         completedTasks.push('Taak 1 klaar');
         setTimeout(() => {
             completedTasks.push('Taak 2 klaar');
             /* C) Plaats je aanpassing op deze regel */
+            func(completedTasks);
         }, Math.random() * 100);
     }, Math.random() * 100);    
 }; 
@@ -40,4 +42,4 @@ let printResults = (resultList) => {
     });
 };
 
-doAllTasks2(/* D) Pas hier de code aan */);
+doAllTasks2(printResults);
