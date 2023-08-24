@@ -22,7 +22,7 @@ Lees de tekst, maak de opgaven en bekijk het filmpje uit [Eloquent JavaScript](h
 - [Chapter 11 (stoppen bij Promises, want Promises doen we in sessie 2-2). Vergeet niet het filmpje over de event loop te bekijken.](https://dwa-courses.firebaseapp.com/11_async.html)
 
 ### Voorbereiding 2: Q & A
-
+return game.goToLocation(COMMAND_ERROR, locationname, next)
 [Lever ten minste 2 vragen en/of discussiepunten over de bovenstaande stof in op
 deze pagina](https://dwa-courses.firebaseapp.com/qna_swd_2.1.html)
 
